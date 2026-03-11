@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Showcase</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px;
+}
+
+.card p{
+    margin:0 15px 20px 15px;
+    color:#555;
+}
+
+button{
+    margin:15px;
+    padding:10px 15px;
+    border:none;
+    background:#ff3c00;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d93200;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#111;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🚗 Car Showcase</h1>
+<p>Explore Amazing Cars</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Sports Car">
+<h3>Sports Car</h3>
+<p>High speed performance car designed for power and style.</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542362567-b07e54358753" alt="Luxury Car">
+<h3>Luxury Car</h3>
+<p>Premium comfort with advanced technology and elegant design.</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" alt="Electric Car">
+<h3>Electric Car</h3>
+<p>Eco-friendly vehicle powered by electricity and modern innovation.</p>
+<button>View Details</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Car Website</p>
+</footer>
+
+</body>
+</html>
